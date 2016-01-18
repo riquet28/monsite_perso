@@ -98,5 +98,13 @@
           </div>
         </div>
       </div>
-    </div><a href="#" class="download-resume"><span class="solid">Télécharger <b>Mon CV</b></span></a> </div>
-    </article>
+    </div>
+    <%= link_to download_pdf_path, :class => "download-resume" do %>
+      <span class="solid">
+        <i class="fa fa-arrow-circle-down" style="margin-right: 20px;"></i>
+          Télécharger <b>Mon CV</b>
+        <i class="fa fa-arrow-circle-down" style="margin-left: 20px;"></i>
+      </span>
+    <% end %>
+  </div>
+</article>
