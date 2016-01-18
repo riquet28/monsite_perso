@@ -1,11 +1,12 @@
 <article class="home-page animated" id="home">
   <div class="row">
     <div class="col-md-6 home-profile">
-      <div class="home-profile-image"><img src="img/eric.jpg" alt="">
+      <div class="home-profile-image">
+        <%= image_tag("eric.jpg") %>
       </div>
       <div class="home-profile-quick">
         <h4>Information</h4>
-        <p>Actuellement étudiant à la Wild Code School, je suis à la recherche d'un stage à partir du 15 février 2016 afin de préparer le titre de développeur web.</p><a href="#profile" class="view-profile">Voir mon profil</a> 
+        <p>Actuellement étudiant à la Wild Code School, je suis à la recherche d'un stage à partir du 15 février 2016 afin de préparer le titre de développeur web.</p><%= link_to "<i class='fa fa-eye'></i>      VOIR MON PROFIL".html_safe, profil_path, class: "view-profile" %>
       </div>
     </div>
     <div class="col-md-6 home-details">
@@ -14,14 +15,14 @@
       <hr>
       <p class="medium"><i>Demain ne sera pas comme hier. Il sera nouveau et dépendra de nous.<br>Il est moins à découvrir qu'à inventer. (Gaston Berger)</i></p>
       <ul class="social">
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
-        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><%= link_to "<i class='fa fa-github'></i>".html_safe, 'https://github.com/riquet28', :target => "_blank" %></li>
+        <li><%= link_to "<i class='fa fa-linkedin'></i>".html_safe, 'https://fr.linkedin.com/in/eric-merlin-563464101', :target => "_blank" %></li>
       </ul>
     </div>
     <div class="col-md-12 skill-home">
       <div class="skill-home-solid clearfix">
         <div class="col-md-3">
-          <h2>Quelques<br><span>compétences</span></h2> 
+          <h2>Parmis mes<br><span>compétences</span></h2>
         </div>
         <div class="col-md-3 text-center"> <span class="icons"><i class="fa fa-code"></i></span>
           <h3>Programmation Web</h3>

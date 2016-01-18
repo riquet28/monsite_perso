@@ -1,0 +1,17 @@
+<header class="header-area">
+  <div class="container">
+    <div class="header-outer clearfix">
+      <div class="logo clearfix"> <span>Eric Merlin</span> <a href="#" class="nav-toggle"><i class="fa fa-bars"></i></a>
+      </div>
+      <nav class="navigation-area">
+        <ul>
+          <li><%= link_to "<i class='fa fa-home'></i>ACCUEIL".html_safe, root_path, class: ("active" if current_page?(root_path))%></li>
+          <li><%= link_to "<i class='fa fa-user'></i>MON PROFIL".html_safe, profil_path, class: ("active" if current_page?(profil_path)) %></li>
+          <li><%= link_to "<i class='fa fa-file-text'></i>MON CV".html_safe, moncv_path, class: ("active" if current_page?(moncv_path)) %></li>
+          <li><%= link_to "<i class='fa fa-code'></i>MES PROJETS".html_safe, projets_path, class: ("active" if current_page?(projets_path)) %></li>
+          <li><%= link_to "<i class='fa fa-envelope'></i>CONTACT".html_safe, contact_path, class: ("active" if current_page?(contact_path)) %></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
