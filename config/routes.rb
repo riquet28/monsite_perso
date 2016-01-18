@@ -7,5 +7,8 @@ Rails.application.routes.draw do
   get 'projets' => 'pages#projets'
   get 'contact' => 'pages#contact'
 
+  #Telechargement pdf
+  get "download_pdf" => 'pages#download_pdf'
+
 
 end
