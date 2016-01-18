@@ -1151,15 +1151,72 @@ h5 {
     -webkit-transition: .7s ease-in-out;
 }
 
+
+
+
+
+
+
+#carousel-example-generic .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+}
+#carousel-example-generic .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    border: 4px solid #CCC;
+    border-radius: 50px;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+#carousel-example-generic .carousel-indicators .active {
+    background: #333333;
+    width: 128px;
+    height: 128px;
+    border-radius: 100px;
+    border-color: #1e75f6;
+    opacity: 1;
+    overflow: hidden;
+}
+.carousel-inner {
+    min-height: 300px;
+}
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
 .testimonial-area {
     padding: 0 0 0 0;
     margin: 60px 0 0 0;
+    background-image: asset-url("wcs.jpg");
+    background-size: cover;
 }
 
 .testimonial-solid {
-    padding: 80px 0 130px 0;
+    padding: 70px 0 80px 0;
     margin: 0 0 0 0;
-    background: rgba(30, 117, 246, 0.8);
+    background: rgba(0, 0, 0, 0.5);
     text-align: center;
 }
 
@@ -1192,6 +1249,7 @@ h5 {
     font-size: 18px;
     line-height: 30px;
     font-style: italic;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 .carousel-indicators {
