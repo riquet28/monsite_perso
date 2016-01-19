@@ -7,35 +7,30 @@
       <h2>Bonjour, je suis <span>Eric Merlin</span></h2>
       <h3>Mon profil vous interresse ? Prenons un café !</h3>
       <ul class="social">
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
-        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><%= link_to "<i class='fa fa-github'></i>".html_safe, 'https://github.com/riquet28', :target => "_blank" %></li>
+        <li><%= link_to "<i class='fa fa-linkedin'></i>".html_safe, 'https://fr.linkedin.com/in/eric-merlin-563464101', :target => "_blank" %></li>
       </ul>
     </div>
     <div class="row profile-middle-content clearfix">
       <div class="col-md-12 contact-map">
-        <iframe class="map_iframe" src="http://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Melbourne,+Victoria,+Australia&amp;aq=0&amp;oq=mel&amp;sll=21.125498,81.914063&amp;sspn=21.895104,43.286133&amp;ie=UTF8&amp;hq=&amp;hnear=Melbourne+Victoria,+Australia&amp;ll=-37.814107,144.96328&amp;spn=0.291298,0.676346&amp;t=m&amp;z=11&amp;output=embed">
-        </iframe>
-        <br/> <small><a href="http://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Melbourne,+Victoria,+Australia&amp;aq=0&amp;oq=mel&amp;sll=21.125498,81.914063&amp;sspn=21.895104,43.286133&amp;ie=UTF8&amp;hq=&amp;hnear=Melbourne+Victoria,+Australia&amp;ll=-37.814107,144.96328&amp;spn=0.291298,0.676346&amp;t=m&amp;z=11" style="color:#0000FF;text-align:left"></a></small>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d674441.3347148045!2d2.011946198960166!3d48.67610713330099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x47e38e6d9d3d671b%3A0x40dc8d705397e60!2s28120+Illiers-Combray%2C+France!3m2!1d48.299426999999994!2d1.2453509999999999!5e0!3m2!1sfr!2sus!4v1453227020232" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
       <div class="col-md-12 contact-form">
         <h3>M'envoyer un message</h3>
         <form name="contact" method="post">
           <div id="contact-form">
-            <input type="text" name="name" id="contact-name" class="your-name" placeholder="Votre Nom">
-            <input type="text" name="email" class="your-email" id="contact-email" placeholder="Votre Email">
-            <input type="text" name="phone" class="your-phone" id="contact-phone" placeholder="Votre Téléphone">
-            <textarea cols="10" rows="4" name="message" id="contact-msg" class="your-message" placeholder="Votre Message"></textarea>
+            <input type="text" name="name" id="contact-name" class="your-name" placeholder="Votre Nom (Non encore fonctionnel)">
+            <input type="text" name="email" class="your-email" id="contact-email" placeholder="Votre Email (Non encore fonctionnel)">
+            <input type="text" name="phone" class="your-phone" id="contact-phone" placeholder="Votre Téléphone (Non encore fonctionnel)">
+            <textarea cols="10" rows="4" name="message" id="contact-msg" class="your-message" placeholder="Votre Message (Messagerie non encore fonctionnel, veuillez utiliser le lien ci-dessous)"></textarea>
             <button type="submit" id="contact-submit" name="submit" class="submit-btn">Envoyer</button>
           </div>
-          <div id="contact-loading"> Email Sending... </div>
-          <div id="contact-success"> Your message sent sucessfully to our team and they will be in touch with you asap. </div>
-          <div id="contact-failed"> Error, message sending faild , try after sometime. </div>
         </form>
       </div>
       <div class="col-md-12 contact-adress">
         <h3>Contact info</h3>
         <p><b>Téléphone :</b> 06.26.63.31.47</p>
-        <p><b>Email :</b> <a href="#">eric.merlin3@gmail.com</a></p>
+        <p><b>Email :</b> <a href="mailto:eric.merlin3@gmail.com">eric.merlin3@gmail.com</a></p>
       </div>
     </div>
   </div>
