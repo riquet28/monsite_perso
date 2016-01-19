@@ -5,23 +5,23 @@
   <div class="profile-cont">
     <div class="profile-top">
       <h2>Mes <span>Projets</span></h2>
-      <h3>Coder, coder, toujours et encore !</h3>
+      <h3>Coder, coder, encore et toujours !</h3>
     </div>
       <div class="row blog-middle-content clearfix">
         <div>
           <div class="col-md-4 blog-single slide_up">
-            <div class="blog-img"><%= image_tag("wildslack.png") %>
-              <div class="ico"><span><i class="fa fa-picture-o"></i></span></div>
+            <div class="blog-img"><%= image_tag("velolaloupe.png") %>
+              <div class="ico"><span><i class="fa fa-volume-up"></i></span></div>
             </div>
             <div class="blog-cont">
-              <h4><a href="#">This is a standard blog format with good picture</a></h4>
+              <h4><a href="#">Projet : KM120.CYCLE<br>CMS - BOLT</a></h4>
               <hr>
-              <p>Lorem ipsum dolor sit amet, consectetur dolor sit amet adipisicing elit...</p>
-              <p><a href="#" class="view-more">View More</a></p>
+              <p>Maquettage du site puis utilisation de bootstrap et du CMS Bolt.</p>
+              <p><%= link_to "Aller au site", 'http://www.km120.fr/', class:"view-more", :target => "_blank"  %></p>
             </div>
             <div class="blog-links clearfix">
-              <div><a href="#"><i class="fa fa-user"></i> Mark Ronald</a></div>
-              <div><a href="#"><i class="fa fa-calendar"></i> 18 June 2014</a></div>
+              <div><a href="#"><i class="fa fa-eye-slash"></i> Projet Privé</a></div>
+              <div><a href="#"><i class="fa fa-calendar"></i> Septembre 2015</a></div>
             </div>
           </div><!-- Fin .col-md-4 -->
 
@@ -30,37 +30,53 @@
               <div class="ico"><span><i class="fa fa-video-camera"></i></span></div>
             </div>
             <div class="blog-cont">
-              <h4><a href="#">This is a standard blog format with good picture</a></h4>
+              <h4><a href="#">Projet : Marinette<br>RUBY ON RAILS</a></h4>
               <hr>
-              <p>Lorem ipsum dolor sit amet, consectetur dolor sit amet adipisicing elit...</p>
-              <p><a href="#" class="view-more">View More</a></p>
+              <p>Reprise du hackathon d'oct. 2015, utilisation d'une API, géocoder, forecastIo...</p>
+              <p><%= link_to "Démo Heroku", 'https://marinette-app.herokuapp.com/', class:"view-more", :target => "_blank"  %></p>
             </div>
             <div class="blog-links clearfix">
-              <div><a href="#"><i class="fa fa-user"></i> Mark Ronald</a></div>
-              <div><a href="#"><i class="fa fa-calendar"></i> 18 June 2014</a></div>
+              <div><%= link_to "<i class='fa fa-github'></i>   Sources Github".html_safe, 'https://github.com/riquet28/Marinette', :target => "_blank" %></div>
+              <div><a href="#"><i class="fa fa-calendar"></i> Octobre 2015</a></div>
             </div>
           </div><!-- Fin .col-md-4 -->
 
           <div class="col-md-4 blog-single slide_up">
-            <div class="blog-img"> <img src="img/blog03.jpg" alt="">
+            <div class="blog-img"><%= image_tag("wildslack.png") %>
+              <div class="ico"><span><i class="fa fa-picture-o"></i></span></div>
+            </div>
+            <div class="blog-cont">
+              <h4><a href="#">Projet : Wildslack<br>RUBY ON RAILS</a></h4>
+              <hr>
+              <p>Reprise personnelle d'un projet type réseaux sociaux, devise, gmaps4rails, mailboxer...</p>
+              <p><%= link_to "Démo Heroku", 'https://wildslack.herokuapp.com/users/sign_in', class:"view-more", :target => "_blank" %></p>
+            </div>
+            <div class="blog-links clearfix">
+              <div><%= link_to "<i class='fa fa-github'></i>   Sources Github".html_safe, 'https://github.com/riquet28/wilder', :target => "_blank" %></div>
+              <div><a href="#"><i class="fa fa-calendar"></i> Décembre 2015</a></div>
+            </div>
+          </div><!-- Fin .col-md-4 -->
+        </div>
+      </div>
+      <div class="row blog-middle-content clearfix">
+        <div>
+          <div class="col-md-4 blog-single slide_up">
+            <div class="blog-img"><%= image_tag("wcs.png") %>
               <div class="ico"><span><i class="fa fa-volume-up"></i></span></div>
             </div>
             <div class="blog-cont">
-              <h4><a href="#">This is a standard blog format with good picture</a></h4>
+              <h4><a href="#">Projet : ODYSSEY<br>RUBY ON RAILS</a></h4>
               <hr>
-              <p>Lorem ipsum dolor sit amet, consectetur dolor sit amet adipisicing elit...</p>
-              <p><a href="#" class="view-more">View More</a></p>
+              <p>Formation RoR sur la plate-forme de l'école, contacter la WCS pour plus d'infos.</p>
+              <p><%= link_to "Projet privé", '#', class:"view-more" %></p>
             </div>
             <div class="blog-links clearfix">
-              <div><a href="#"><i class="fa fa-user"></i> Mark Ronald</a></div>
-              <div><a href="#"><i class="fa fa-calendar"></i> 18 June 2014</a></div>
+              <div><a href="#"><i class="fa fa-eye-slash"></i> Projet Privé</a></div>
+              <div><a href="#"><i class="fa fa-calendar"></i> EN COURS</a></div>
             </div>
           </div><!-- Fin .col-md-4 -->
-
-        <div class="col-md-12 slide_up">
-          <a href="#" class="blog-more"><span class="solid">View More <b>Blog</b></span></a>
         </div>
       </div>
     </div>
   </div>
-</article>>
+</article>
