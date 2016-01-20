@@ -4,36 +4,55 @@
       <div class="container">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
-        <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" alt="">
-        </li>
-        <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/rssems/128.jpg" alt="">
-        </li>
-        <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg" alt="">
-        </li>
-        <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/rssems/128.jpg" alt="">
-        </li>
-      </ol>
+            <li data-target="#quote-carousel" data-slide-to="0" class="active"><%= image_tag(("amelie.jpg"), :class => "img-responsive") %>
+            </li>
+            <li data-target="#quote-carousel" data-slide-to="1"><%= image_tag(("celine.jpg"), :class => "img-responsive") %>
+            </li>
+            <li data-target="#quote-carousel" data-slide-to="2"><%= image_tag(("cyrille.jpg"), :class => "img-responsive") %>
+            </li>
+            <li data-target="#quote-carousel" data-slide-to="1"><%= image_tag(("thierry.jpg"), :class => "img-responsive") %>
+            </li>
+          </ol>
           <div class="carousel-inner">
             <div class="item active">
-              <p>Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</p>
-              <p><b>- Elève X, Web développeur Ruby, WCS 2ème promo -</b></p>
+              <p>"Eric est une personne avec qui j'ai vraiment apprécié de travailler. Extrêmement persévérant il ne renonce jamais et trouve toujours une solution. Il est taillé pour le développement et s'épanoui dans ce domaine."</p>
+              <p>
+                <%= link_to 'https://fr.linkedin.com/in/amelienadalini/en', :target => "_blank" do %>
+                  <span class="linkelien">- Amélie N., Web développeur Ruby, WCS 2ème promo -</span>
+                <% end %>
+              </p>
+            </div>
+            <div class="item">
+              <p>"Éric est une personne aimable, qui sait travailler en groupe. Il est consciencieux et aime le travail bien fait."</p>
+              <p>
+                <%= link_to 'https://fr.linkedin.com/in/c%C3%A9line-langlade-24a22382', :target => "_blank" do %>
+                  <span class="linkelien">- Céline L., Web développeur Php, WCS 2ème promo -</span>
+                <% end %>
+              </p>
+            </div>
+            <div class="item">
+              <p>"Au cours de ma formation j'ai pu travailler pendant plusieurs semaines avec Eric. C'est une personne agréable et organisée dans son travail. De part ses nombreuses connaissances, sa motivation et sa bonne humeur il est un moteur pour l'équipe. J'ai énormément appris à ses cotés et espère par la suite retravailler avec lui sur un projet commun !"</p>
+              <p>
+                <%= link_to 'https://fr.linkedin.com/in/cyrille-gross-12893b106', :target => "_blank" do %>
+                  <span class="linkelien">- Cyrille G., Web développeur Php, WCS 2ème promo -</span>
+                <% end %>
+              </p>
             </div>
             <div class="item">
               <p>Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</p>
-              <p><b>- Elève X, Web développeur Javascript, WCS 2ème promo -</b></p>
-            </div>
-            <div class="item">
-              <p>Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</p>
-              <p><b>- Elève X, Web développeur Ruby, WCS 2ème promo -</b></p>
-            </div>
-            <div class="item">
-              <p>Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</p>
-              <p><b>- Pierre Paul, Formateur WCS -</b></p>
+              <p class="linkelien-a">
+                <%= link_to 'https://fr.linkedin.com/in/thierrydamey', :target => "_blank" do %>
+                  <span class="linkelien">- Thierry D., Web développeur Php, WCS 2ème promo -</span>
+                <% end %>
+              </p>
             </div>
           </div>
+            <!-- Carousel Buttons Next/Prev -->
+            <a data-slide="prev" href="#carousel-example-generic" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+            <a data-slide="next" href="#carousel-example-generic" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
         </div>
       </div>
     </div>
   </div>
-  <div class="copy-content">2016 Eric Merlin | Etudiant Wild Code School</a></div>
+  <div class="copy-content">2016 Eric Merlin | Etudiant Wild Code School | Design Lantern</a></div>
 </footer>

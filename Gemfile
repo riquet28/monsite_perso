@@ -33,6 +33,8 @@ gem 'autoprefixer-rails'
 gem 'haml'
 # Font Awesome
 gem 'font-awesome-sass', '~> 4.2.0'
+# Prawn generation de pdf
+gem 'prawn'
 
 ###################################
 

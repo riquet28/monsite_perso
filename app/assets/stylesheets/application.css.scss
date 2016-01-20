@@ -1166,6 +1166,9 @@ h5 {
     top: auto;
     bottom: 0px;
     margin-right: -19px;
+    b {
+        color: red;
+    }
 }
 #carousel-example-generic .carousel-indicators li {
     width: 50px;
@@ -1201,8 +1204,20 @@ h5 {
     margin-right: 10px;
 }
 
+.carousel-control.left, .carousel-control.right {
+    top: 50%;
+}
 
-
+.linkelien {
+    font-weight: bold;
+    color: #fff;
+}
+.linkelien-a {
+    a:hover {
+    text-decoration: none;
+    color: #1e75f6;
+    }
+}
 
 
 
