@@ -37,7 +37,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.3)
-    autoprefixer-rails (6.2.3)
+    autoprefixer-rails (6.3.1)
       execjs
       json
     binding_of_caller (0.7.2)
@@ -81,9 +81,10 @@ GEM
     mini_portile2 (2.0.0)
     minitest (5.8.3)
     multi_json (1.11.2)
-    nokogiri (1.6.7.1)
+    nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     pdf-core (0.6.0)
+    pg (0.18.4)
     prawn (2.0.2)
       pdf-core (~> 0.6.0)
       ttfunk (~> 1.4.0)
@@ -165,6 +166,7 @@ DEPENDENCIES
   haml
   jbuilder (~> 2.0)
   jquery-rails
+  pg
   prawn
   rails (= 4.2.4)
   sass-rails (~> 5.0)
