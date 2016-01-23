@@ -38,6 +38,7 @@ gem 'prawn'
 # Envoi du formulaire de contact
 gem 'mail_form'
 
+
 ###################################
 
 group :development, :test do
