@@ -40,6 +40,9 @@ gem 'haml'
 gem 'font-awesome-sass', '~> 4.2.0'
 # Prawn generation de pdf
 gem 'prawn'
+# Envoi du formulaire de contact
+gem 'mail_form'
+
 
 ###################################
 
