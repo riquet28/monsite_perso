@@ -9,7 +9,7 @@
           <li><%= link_to "<i class='fa fa-user'></i>MON PROFIL".html_safe, profil_path, class: ("active" if current_page?(profil_path)) %></li>
           <li><%= link_to "<i class='fa fa-file-text'></i>MON CV".html_safe, moncv_path, class: ("active" if current_page?(moncv_path)) %></li>
           <li><%= link_to "<i class='fa fa-code'></i>MES PROJETS".html_safe, projets_path, class: ("active" if current_page?(projets_path)) %></li>
-          <li><%= link_to "<i class='fa fa-envelope'></i>CONTACT".html_safe, contact_path, class: ("active" if current_page?(contact_path)) %></li>
+          <li><%= link_to "<i class='fa fa-envelope'></i>CONTACT".html_safe, new_contact_path, class: ("active" if current_page?(new_contact_path)) %></li>
         </ul>
       </nav>
     </div>
