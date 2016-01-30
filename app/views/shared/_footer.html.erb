@@ -3,18 +3,28 @@
     <div class="testimonial-solid">
       <div class="container">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#quote-carousel" data-slide-to="0" class="active"><%= image_tag(("amelie.jpg"), :class => "img-responsive") %>
+          <ol class="carousel-indicators hidden-xs">
+            <li data-target="#quote-carousel" data-slide-to="0" class="active"><%= image_tag(("mathieu.jpg"), :class => "img-responsive") %>
             </li>
-            <li data-target="#quote-carousel" data-slide-to="1"><%= image_tag(("celine.jpg"), :class => "img-responsive") %>
+            <li data-target="#quote-carousel" data-slide-to="1"><%= image_tag(("amelie.jpg"), :class => "img-responsive") %>
             </li>
-            <li data-target="#quote-carousel" data-slide-to="2"><%= image_tag(("cyrille.jpg"), :class => "img-responsive") %>
+            <li data-target="#quote-carousel" data-slide-to="2"><%= image_tag(("celine.jpg"), :class => "img-responsive") %>
             </li>
-            <li data-target="#quote-carousel" data-slide-to="1"><%= image_tag(("thierry.jpg"), :class => "img-responsive") %>
+            <li data-target="#quote-carousel" data-slide-to="3"><%= image_tag(("cyrille.jpg"), :class => "img-responsive") %>
+            </li>
+            <li data-target="#quote-carousel" data-slide-to="4"><%= image_tag(("thierry.jpg"), :class => "img-responsive") %>
             </li>
           </ol>
           <div class="carousel-inner">
             <div class="item active">
+              <p>""Eric est une personne qui ne renonce devant rien et qui à réussi à mener tous ses projets à bien au court de la formation aussi bien ceux proposé par l’école que ceux qu’il s’est imposé.<br>Une vrai réussite, pour quelqu’un de déterminé depuis les premiers jours et qui ira sans aucun doute très loin."</p>
+              <p>
+                <%= link_to 'https://fr.linkedin.com/in/carbonelm', :target => "_blank" do %>
+                  <span class="linkelien">- Mathieu C., Formateur Ruby, Wild Code School -</span>
+                <% end %>
+              </p>
+            </div>
+            <div class="item">
               <p>"Eric est une personne avec qui j'ai vraiment apprécié travailler. Extrêmement persévérant il ne renonce jamais et trouve toujours une solution. Il est taillé pour le développement et s'épanoui dans ce domaine."</p>
               <p>
                 <%= link_to 'https://fr.linkedin.com/in/amelienadalini/en', :target => "_blank" do %>
